@@ -18,7 +18,7 @@ public class Main {
 	public static void getCarInfo() {
 		collectCarData(source);
 
-		System.out.println(map.size() + " araç var: ");
+		System.out.println("There is "+ map.size() + " car:");
 		System.out.println();
 		for (int i = 0; i < map.size(); i++) {
 			System.out.println((i + 1) + ". " + map.get(i).toString());
@@ -28,14 +28,14 @@ public class Main {
 			Car bestOne = sortCarPrices(source).get(0);
 
 			System.out.println();
-			System.out.println("En uygun fiyat teklifi: " + bestOne.getPrice() + " TL ile '" + bestOne.getColor()
-					+ "' renkli araca ait.");
+			System.out.println("The best car offer is: " + bestOne.getPrice() + " TL '" + bestOne.getColor()
+					+ "' colored car.");
 			System.out.println();
-			System.out.println("Fiyat sýralamasý:");
+			System.out.println("Price ranking:");
 			System.out.println(sortCarPrices(source).toString());
 
 		} else {
-			System.out.println("Herhangi bir araç bulunamadý");
+			System.out.println("There is no car!");
 		}
 
 	}
