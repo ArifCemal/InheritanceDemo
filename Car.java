@@ -2,7 +2,7 @@ package main;
 
 public class Car {
 
-	String color = "Varsayýlan";
+	String color = "Default";
 	int price;
 
 	public int getPrice() {
