@@ -27,7 +27,7 @@ public class Car {
 
 	@Override
 	public String toString() {
-		return this.getColor() + " renkli: "+this.getPrice();
+		return this.getColor() + " colored: "+this.getPrice();
 	}
 
 }
